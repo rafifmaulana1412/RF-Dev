@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0a0f1a;
+  color: #e8f0f5;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d1520;
+}
+::-webkit-scrollbar-thumb {
+  background: #00c8e0;
+  border-radius: 3px;
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #00c8e0, #60e8f8, #0090a8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-border {
+  border: 1px solid rgba(0, 200, 224, 0.3);
+}
+
+.studio-card {
+  background: #0d1520;
+  border: 1px solid #1a2535;
+  transition: all 0.3s ease;
+}
+
+.studio-card:hover {
+  border-color: rgba(0, 200, 224, 0.4);
+  box-shadow: 0 0 30px rgba(0, 200, 224, 0.08);
+}
+
+.gold-glow {
+  box-shadow: 0 0 20px rgba(0, 200, 224, 0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

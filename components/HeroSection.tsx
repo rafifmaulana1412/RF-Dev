@@ -58,7 +58,7 @@ export default function HeroSection() {
         <div className="max-w-3xl">
           {/* Badge */}
           <motion.div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/5 mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/5 mb-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -68,6 +68,16 @@ export default function HeroSection() {
               Open for Projects
             </span>
           </motion.div>
+
+          {/* Location */}
+          <motion.p
+            className="text-cream/30 text-xs font-mono mb-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+          >
+            📍 Pamulang, Tangerang Selatan · Melayani seluruh Indonesia
+          </motion.p>
 
           {/* Heading */}
           <motion.h1

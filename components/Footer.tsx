@@ -14,9 +14,14 @@ export default function Footer() {
             height={28}
             className="rounded-full object-cover"
           />
-          <span className="text-cream/40 text-sm font-body">
-            RF <span className="text-gold">dev</span> Web Development Studio
-          </span>
+          <div>
+            <span className="text-cream/40 text-sm font-body">
+              RF <span className="text-gold">dev</span> Web Development Studio
+            </span>
+            <p className="text-cream/20 text-xs mt-0.5">
+              Pamulang, Tangerang Selatan · Melayani seluruh Indonesia
+            </p>
+          </div>
         </div>
         <p className="text-cream/20 text-xs font-mono">
           © {new Date().getFullYear()} RF dev. All rights reserved.

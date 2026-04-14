@@ -17,25 +17,27 @@ const services = [
     icon: Globe,
     tag: "Landing Page",
     title: "Website Landing Page",
-    desc: "Precision-built landing pages for foundations, personal branding, and company profiles. Responsive, fast, and deployed to production.",
+    desc: "Website statis yang cepat, responsif, dan siap deploy. Cocok untuk personal branding, portofolio, company profile, hingga promosi produk.",
     packages: [
       {
-        name: "Basic",
+        name: "Portofolio / Personal",
         price: "Rp 2.500.000",
         withDomain: "Rp 2.700.000",
+        forWho: "Cocok untuk: fresh graduate, freelancer, lamar kerja",
         features: [
-          "1–3 halaman",
-          "Responsive mobile",
+          "1–3 halaman (About, Skills, Projects)",
           "Desain modern & clean",
+          "Responsive mobile",
           "Deploy ke Vercel",
         ],
       },
       {
-        name: "Standard",
+        name: "Company Profile",
         price: "Rp 4.000.000",
         withDomain: "Rp 4.200.000",
+        forWho: "Cocok untuk: UMKM, startup, yayasan, komunitas",
         features: [
-          "4–6 halaman",
+          "4–6 halaman (Home, About, Services, Contact, dll)",
           "Animasi interaktif",
           "Form kontak WA/Email",
           "SEO basic",
@@ -43,13 +45,14 @@ const services = [
         highlight: true,
       },
       {
-        name: "Premium",
+        name: "Landing Page Produk",
         price: "Rp 6.000.000+",
         withDomain: "Rp 6.200.000+",
+        forWho: "Cocok untuk: produk digital, event, campaign marketing",
         features: [
           "Unlimited section",
-          "UI kompleks + animasi",
-          "Dashboard admin (opsional)",
+          "UI premium + animasi kompleks",
+          "Integrasi form / CTA",
           "Optimasi performa & SEO",
         ],
       },
@@ -66,6 +69,7 @@ const services = [
         name: "Standard",
         price: "Rp 7.000.000",
         withDomain: "Rp 7.500.000",
+        forWho: "Cocok untuk: sistem internal, manajemen data sederhana",
         features: [
           "Frontend + Backend",
           "Database integration",
@@ -77,6 +81,7 @@ const services = [
         name: "Advanced",
         price: "Rp 10.000.000 – 14.000.000",
         withDomain: "Rp 10.500.000+",
+        forWho: "Cocok untuk: marketplace, SaaS, sistem enterprise",
         features: [
           "Multi-role login",
           "Dashboard lengkap",
@@ -98,6 +103,7 @@ const services = [
         name: "Midtrans",
         price: "Rp 2.000.000 – 2.500.000",
         withDomain: null,
+        forWho: "Cocok untuk: toko online, platform kursus, donasi",
         features: [
           "Setup SNAP Payment",
           "Backend API transaksi",
@@ -109,6 +115,7 @@ const services = [
         name: "Xendit",
         price: "Rp 3.500.000",
         withDomain: null,
+        forWho: "Cocok untuk: invoice otomatis, subscription, marketplace",
         features: [
           "Setup invoice system",
           "Webhook callback otomatis",
@@ -130,6 +137,7 @@ const services = [
         name: "Migration Package",
         price: "Rp 4.000.000 – 5.000.000",
         withDomain: null,
+        forWho: "Cocok untuk: bisnis yang ingin pindah provider payment",
         features: [
           "Rebuild flow pembayaran",
           "Update backend endpoint",
@@ -150,6 +158,7 @@ const services = [
         name: "Bulanan",
         price: "Rp 750.000 / bulan",
         withDomain: null,
+        forWho: "Cocok untuk: website statis, landing page",
         features: [
           "Bug fixing minor",
           "Update konten ringan",
@@ -160,6 +169,7 @@ const services = [
         name: "Full Priority",
         price: "Rp 1.500.000 / bulan",
         withDomain: null,
+        forWho: "Cocok untuk: aplikasi aktif, sistem dengan transaksi",
         features: [
           "Perubahan fitur kecil",
           "Fast response SLA",
@@ -292,11 +302,16 @@ export default function ServicesSection() {
                                 {pkg.price}
                               </div>
                               {pkg.withDomain && (
-                                <div className="text-xs text-cream/30 mb-4">
+                                <div className="text-xs text-cream/30 mb-2">
                                   +domain:{" "}
                                   <span className="text-gold/70">
                                     {pkg.withDomain}
                                   </span>
+                                </div>
+                              )}
+                              {"forWho" in pkg && pkg.forWho && (
+                                <div className="text-xs text-gold/60 bg-gold/5 border border-gold/10 rounded-lg px-3 py-1.5 mt-2 mb-1">
+                                  {pkg.forWho as string}
                                 </div>
                               )}
                               <ul className="space-y-2 mt-4">

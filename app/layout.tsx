@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: "RF dev — Web Development Studio",
   description:
     "Full-stack web development studio. Landing pages, fullstack apps, payment gateway integration, and maintenance. Production-ready, on time.",
-  metadataBase: new URL("https://rf-dev.vercel.app"), // ganti sesuai domain lo
+  metadataBase: new URL("https://rf-dev-olive.vercel.app"),
   openGraph: {
     title: "rf dev — Web Development Studio",
     description:
       "Full-stack web development studio. Landing pages, fullstack apps, payment gateway integration, and maintenance. Production-ready, on time.",
-    url: "https://rfdev.vercel.app",
+    url: "https://rf-dev-olive.vercel.app",
     siteName: "RF dev",
     images: [
       {

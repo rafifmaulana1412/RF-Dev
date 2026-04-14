@@ -7,22 +7,22 @@ const reasons = [
   {
     icon: Zap,
     title: "Fast Delivery",
-    desc: "Landing page selesai dalam 3–7 hari kerja. Fullstack app 2–4 minggu. Timeline disepakati di awal, bukan estimasi asal.",
+    desc: "Landing pages done in 3–7 business days. Fullstack apps in 2–4 weeks. Timeline is agreed upfront, not just an estimate.",
   },
   {
     icon: MessageSquare,
-    title: "Komunikasi Transparan",
-    desc: "Update progress rutin, tidak ghosting. Lo selalu tahu project ada di tahap mana tanpa harus nanya duluan.",
+    title: "Transparent Communication",
+    desc: "Regular progress updates, no ghosting. You always know what stage your project is at without having to ask.",
   },
   {
     icon: ShieldCheck,
-    title: "Harga Jelas, No Hidden Fee",
-    desc: "Semua biaya tertera di proposal sebelum pengerjaan. Tidak ada biaya tambahan mendadak di tengah jalan.",
+    title: "Clear Pricing, No Hidden Fees",
+    desc: "All costs are stated in the proposal before work begins. No surprise charges in the middle of the project.",
   },
   {
     icon: Code,
     title: "Production-Ready Code",
-    desc: "Bukan sekadar tampil bagus — kode bersih, terstruktur, dan siap scale. Lo bisa lanjutkan atau modifikasi sendiri.",
+    desc: "Not just good-looking — clean, structured, and scalable code. You can continue or modify it yourself.",
   },
 ];
 
@@ -41,10 +41,10 @@ export default function WhyUsSection() {
             Why rf dev
           </p>
           <h2 className="font-heading text-4xl md:text-5xl font-800 text-cream mb-4">
-            Kenapa Pilih <span className="gold-text">Kami?</span>
+            Why Choose <span className="gold-text">Us?</span>
           </h2>
           <p className="text-cream/50 max-w-xl">
-            Banyak developer bisa bikin website. Ini yang bikin kami beda.
+            Many developers can build websites. Here's what makes us different.
           </p>
         </motion.div>
 

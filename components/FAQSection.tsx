@@ -6,28 +6,28 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    q: "Berapa lama pengerjaan website?",
-    a: "Tergantung kompleksitas. Landing page 3–7 hari kerja, fullstack app 2–4 minggu. Timeline pasti akan disepakati di awal sebelum pengerjaan dimulai.",
+    q: "How long does it take to build a website?",
+    a: "Depends on complexity. Landing pages take 3–7 business days, fullstack apps 2–4 weeks. An exact timeline will be agreed upon before work begins.",
   },
   {
-    q: "Berapa DP yang harus dibayar?",
-    a: "DP 50% di awal sebelum pengerjaan, pelunasan 50% setelah project selesai dan disetujui. Untuk project besar bisa dinegosiasikan dengan skema cicilan.",
+    q: "How much is the down payment?",
+    a: "50% upfront before work starts, 50% upon completion and approval. For larger projects, installment schemes can be negotiated.",
   },
   {
-    q: "Berapa kali revisi yang didapat?",
-    a: "Setiap paket sudah termasuk revisi minor tanpa batas selama masa pengerjaan. Revisi besar di luar scope awal akan dikenakan biaya tambahan yang disepakati bersama.",
+    q: "How many revisions are included?",
+    a: "Unlimited minor revisions are included during development. Major revisions outside the original scope will incur an additional fee agreed upon together.",
   },
   {
-    q: "Apakah bisa request fitur custom?",
-    a: "Tentu. Semua project dikerjakan sesuai kebutuhan spesifik klien. Konsultasi gratis untuk mendiskusikan scope dan estimasi biaya fitur custom.",
+    q: "Can I request custom features?",
+    a: "Absolutely. All projects are built to each client's specific needs. Free consultation to discuss scope and cost estimates for custom features.",
   },
   {
-    q: "Apakah ada garansi setelah selesai?",
-    a: "Ada garansi bug fixing 30 hari setelah delivery. Jika ada bug dari sisi pengerjaan kami, akan diperbaiki tanpa biaya tambahan.",
+    q: "Is there a warranty after completion?",
+    a: "Yes, 30-day bug fixing warranty after delivery. Any bugs from our side will be fixed at no extra charge.",
   },
   {
-    q: "Teknologi apa yang digunakan?",
-    a: "Kami menggunakan Next.js, React, Node.js, Express, PostgreSQL, Prisma, Supabase, dan Tailwind CSS. Stack dipilih sesuai kebutuhan project untuk performa dan skalabilitas terbaik.",
+    q: "What technologies do you use?",
+    a: "We use Next.js, React, Node.js, Express, PostgreSQL, Prisma, Supabase, and Tailwind CSS. Stack is chosen based on project needs for best performance and scalability.",
   },
 ];
 
@@ -48,10 +48,10 @@ export default function FAQSection() {
             FAQ
           </p>
           <h2 className="font-heading text-4xl md:text-5xl font-800 text-cream mb-4">
-            Pertanyaan yang <span className="gold-text">Sering Ditanya</span>
+            Frequently Asked <span className="gold-text">Questions</span>
           </h2>
           <p className="text-cream/50 max-w-xl">
-            Masih ada pertanyaan lain? Langsung chat kami.
+            Still have questions? Just chat with us directly.
           </p>
         </motion.div>
 

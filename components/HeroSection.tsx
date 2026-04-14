@@ -76,7 +76,7 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            📍 Pamulang, Tangerang Selatan · Melayani seluruh Indonesia
+            📍 Pamulang, Tangerang Selatan · Serving clients across Indonesia
           </motion.p>
 
           {/* Heading */}

@@ -19,7 +19,7 @@ export default function ContactSection() {
     "Fullstack Web App",
     "Payment Gateway",
     "Maintenance",
-    "Lainnya",
+    "Other",
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function ContactSection() {
             Let's Build <span className="gold-text">Something.</span>
           </h2>
           <p className="text-cream/50 max-w-xl">
-            Isi form di bawah dan kami akan langsung balas via WhatsApp.
+            Fill in the form below and we'll reply via WhatsApp right away.
           </p>
         </motion.div>
 
@@ -56,12 +56,12 @@ export default function ContactSection() {
             {/* Name */}
             <div>
               <label className="text-cream/50 text-xs font-mono uppercase tracking-widest block mb-2">
-                Nama
+                Name
               </label>
               <input
                 type="text"
                 required
-                placeholder="Nama kamu"
+                placeholder="Your name"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 className="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-cream text-sm placeholder:text-cream/20 focus:outline-none focus:border-gold/50 transition-colors"
@@ -71,7 +71,7 @@ export default function ContactSection() {
             {/* Service */}
             <div>
               <label className="text-cream/50 text-xs font-mono uppercase tracking-widest block mb-2">
-                Layanan yang dibutuhkan
+                Service needed
               </label>
               <select
                 required
@@ -83,7 +83,7 @@ export default function ContactSection() {
                 }}
               >
                 <option value="" disabled>
-                  Pilih layanan...
+                  Select a service...
                 </option>
                 {services.map((s) => (
                   <option key={s} value={s} className="text-cream bg-dark-card">
@@ -96,12 +96,12 @@ export default function ContactSection() {
             {/* Message */}
             <div>
               <label className="text-cream/50 text-xs font-mono uppercase tracking-widest block mb-2">
-                Ceritakan project kamu
+                Tell us about your project
               </label>
               <textarea
                 required
                 rows={4}
-                placeholder="Deskripsikan kebutuhan project kamu..."
+                placeholder="Describe your project needs..."
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 className="w-full bg-dark-card border border-dark-border rounded-xl px-4 py-3 text-cream text-sm placeholder:text-cream/20 focus:outline-none focus:border-gold/50 transition-colors resize-none"
@@ -115,7 +115,7 @@ export default function ContactSection() {
               whileTap={{ scale: 0.98 }}
             >
               <Send className="w-4 h-4" />
-              Kirim via WhatsApp
+              Send via WhatsApp
             </motion.button>
           </motion.form>
 
@@ -129,11 +129,9 @@ export default function ContactSection() {
           >
             <div className="studio-card rounded-2xl p-6 space-y-5">
               <p className="text-cream/70 text-sm leading-relaxed">
-                Konsultasi gratis, tanpa komitmen. Kami akan balas dalam{" "}
-                <span className="text-gold font-semibold">
-                  kurang dari 1 jam
-                </span>{" "}
-                di jam kerja.
+                Free consultation, no commitment. We'll reply within{" "}
+                <span className="text-gold font-semibold">under 1 hour</span>{" "}
+                during business hours.
               </p>
 
               <div className="space-y-3 pt-2 border-t border-dark-border">
@@ -159,10 +157,10 @@ export default function ContactSection() {
             {/* Quick stats */}
             <div className="grid grid-cols-2 gap-3">
               {[
-                { value: "< 1 jam", label: "Response time" },
-                { value: "Gratis", label: "Konsultasi" },
-                { value: "50%", label: "DP di awal" },
-                { value: "30 hari", label: "Garansi bug" },
+                { value: "< 1 hr", label: "Response time" },
+                { value: "Free", label: "Consultation" },
+                { value: "50%", label: "Down payment" },
+                { value: "30 days", label: "Bug warranty" },
               ].map((s) => (
                 <div
                   key={s.label}

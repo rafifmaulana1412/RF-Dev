@@ -19,7 +19,7 @@ export default function Footer() {
               RF <span className="text-gold">dev</span> Web Development Studio
             </span>
             <p className="text-cream/20 text-xs mt-0.5">
-              Pamulang, Tangerang Selatan · Melayani seluruh Indonesia
+              Pamulang, Tangerang Selatan · Serving clients across Indonesia
             </p>
           </div>
         </div>

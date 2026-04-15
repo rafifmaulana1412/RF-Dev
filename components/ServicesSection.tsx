@@ -21,41 +21,43 @@ const services = [
     packages: [
       {
         name: "Portfolio / Personal",
-        price: "Rp 2.700.000",
+        price: "Rp 2.500.000",
         forWho: "Best for: fresh graduates, freelancers, job seekers",
         duration: "5 hari kerja",
         features: [
           "1–3 pages (About, Skills, Projects)",
           "Modern & clean design",
           "Mobile responsive",
-          "Domain + hosting 1 tahun",
-          "Deploy to Vercel",
+          "Free hosting di Vercel",
+          "Domain .com 1 tahun (+Rp 200.000)",
         ],
       },
       {
         name: "Company Profile",
-        price: "Rp 4.200.000",
+        price: "Rp 4.000.000",
         forWho: "Best for: SMEs, startups, foundations, communities",
         duration: "7 hari kerja",
         features: [
           "4–6 pages (Home, About, Services, Contact, etc.)",
           "Interactive animations",
           "WA/Email contact form",
-          "Domain + hosting 1 tahun",
+          "Free hosting di Vercel",
+          "Domain .com 1 tahun (+Rp 200.000)",
           "Basic SEO",
         ],
         highlight: true,
       },
       {
         name: "Product Landing Page",
-        price: "Rp 6.200.000+",
+        price: "Rp 6.000.000+",
         forWho: "Best for: digital products, events, marketing campaigns",
         duration: "10 hari kerja",
         features: [
           "Unlimited sections",
           "Premium UI + complex animations",
           "Form / CTA integration",
-          "Domain + hosting 1 tahun",
+          "Free hosting di Vercel",
+          "Domain .com 1 tahun (+Rp 200.000)",
           "Performance & SEO optimization",
         ],
       },
@@ -78,12 +80,12 @@ const services = [
           "Database integration",
           "Basic admin panel",
           "REST API",
-          "Domain + hosting 1 tahun",
+          "VPS hosting + domain 1 tahun (included)",
         ],
       },
       {
         name: "Advanced",
-        price: "Rp 10.500.000 – 14.500.000",
+        price: "Rp 11.000.000 – 15.000.000",
         forWho: "Best for: marketplace, SaaS, enterprise systems",
         duration: "14 hari kerja",
         features: [
@@ -91,7 +93,7 @@ const services = [
           "Full dashboard",
           "Notifications / email",
           "Complex & scalable API",
-          "Domain + hosting 1 tahun",
+          "VPS hosting + domain 1 tahun (included)",
         ],
         highlight: true,
       },
@@ -162,7 +164,6 @@ const services = [
       {
         name: "Monthly",
         price: "Rp 750.000 / month",
-        withDomain: null,
         forWho: "Best for: static websites, landing pages",
         duration: "Ongoing",
         features: [
@@ -174,7 +175,6 @@ const services = [
       {
         name: "Full Priority",
         price: "Rp 1.500.000 / month",
-        withDomain: null,
         forWho: "Best for: active apps, systems with transactions",
         duration: "Ongoing",
         features: [

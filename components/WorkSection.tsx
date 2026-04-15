@@ -44,7 +44,7 @@ const projects: Project[] = [
       "A comprehensive website for Yayasan Hidayatullah Gorontalo foundation, focusing on charity work and educational programs for orphans and underprivileged children. Features include program information, donation system, volunteer registration, news updates, and administrative dashboard. Built with accessibility and user experience in mind to effectively communicate the foundation's mission.",
     tech: ["React", "Tailwind CSS", "JavaScript"],
     image: "/yayasan-hidayatullah.png",
-    live: "#",
+    live: "https://yayasan-hidayatullah-gorontaloutara.vercel.app/",
   },
   {
     title: "Portal Iuran Pendidikan Qur'ani",

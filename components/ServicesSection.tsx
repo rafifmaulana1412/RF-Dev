@@ -21,38 +21,41 @@ const services = [
     packages: [
       {
         name: "Portfolio / Personal",
-        price: "Rp 2.500.000",
-        withDomain: "Rp 2.700.000",
+        price: "Rp 2.700.000",
         forWho: "Best for: fresh graduates, freelancers, job seekers",
+        duration: "5 hari kerja",
         features: [
           "1–3 pages (About, Skills, Projects)",
           "Modern & clean design",
           "Mobile responsive",
+          "Domain + hosting 1 tahun",
           "Deploy to Vercel",
         ],
       },
       {
         name: "Company Profile",
-        price: "Rp 4.000.000",
-        withDomain: "Rp 4.200.000",
+        price: "Rp 4.200.000",
         forWho: "Best for: SMEs, startups, foundations, communities",
+        duration: "7 hari kerja",
         features: [
           "4–6 pages (Home, About, Services, Contact, etc.)",
           "Interactive animations",
           "WA/Email contact form",
+          "Domain + hosting 1 tahun",
           "Basic SEO",
         ],
         highlight: true,
       },
       {
         name: "Product Landing Page",
-        price: "Rp 6.000.000+",
-        withDomain: "Rp 6.200.000+",
+        price: "Rp 6.200.000+",
         forWho: "Best for: digital products, events, marketing campaigns",
+        duration: "10 hari kerja",
         features: [
           "Unlimited sections",
           "Premium UI + complex animations",
           "Form / CTA integration",
+          "Domain + hosting 1 tahun",
           "Performance & SEO optimization",
         ],
       },
@@ -67,26 +70,28 @@ const services = [
     packages: [
       {
         name: "Standard",
-        price: "Rp 7.000.000",
-        withDomain: "Rp 7.500.000",
+        price: "Rp 7.500.000",
         forWho: "Best for: internal systems, simple data management",
+        duration: "14 hari kerja",
         features: [
           "Frontend + Backend",
           "Database integration",
           "Basic admin panel",
           "REST API",
+          "Domain + hosting 1 tahun",
         ],
       },
       {
         name: "Advanced",
-        price: "Rp 10.000.000 – 14.000.000",
-        withDomain: "Rp 10.500.000+",
+        price: "Rp 10.500.000 – 14.500.000",
         forWho: "Best for: marketplace, SaaS, enterprise systems",
+        duration: "14 hari kerja",
         features: [
           "Multi-role login",
           "Full dashboard",
           "Notifications / email",
           "Complex & scalable API",
+          "Domain + hosting 1 tahun",
         ],
         highlight: true,
       },
@@ -102,8 +107,8 @@ const services = [
       {
         name: "Midtrans",
         price: "Rp 2.000.000 – 2.500.000",
-        withDomain: null,
         forWho: "Best for: online stores, course platforms, donations",
+        duration: "5 hari kerja",
         features: [
           "SNAP Payment setup",
           "Transaction backend API",
@@ -114,8 +119,8 @@ const services = [
       {
         name: "Xendit",
         price: "Rp 3.500.000",
-        withDomain: null,
         forWho: "Best for: auto invoicing, subscriptions, marketplace",
+        duration: "7 hari kerja",
         features: [
           "Invoice system setup",
           "Automatic webhook callback",
@@ -136,8 +141,8 @@ const services = [
       {
         name: "Migration Package",
         price: "Rp 4.000.000 – 5.000.000",
-        withDomain: null,
         forWho: "Best for: businesses switching payment providers",
+        duration: "7 hari kerja",
         features: [
           "Rebuild payment flow",
           "Update backend endpoints",
@@ -159,6 +164,7 @@ const services = [
         price: "Rp 750.000 / month",
         withDomain: null,
         forWho: "Best for: static websites, landing pages",
+        duration: "Ongoing",
         features: [
           "Minor bug fixing",
           "Light content updates",
@@ -170,6 +176,7 @@ const services = [
         price: "Rp 1.500.000 / month",
         withDomain: null,
         forWho: "Best for: active apps, systems with transactions",
+        duration: "Ongoing",
         features: [
           "Small feature changes",
           "Fast response SLA",
@@ -301,17 +308,15 @@ export default function ServicesSection() {
                               <div className="font-heading text-xl font-700 text-cream mb-1">
                                 {pkg.price}
                               </div>
-                              {pkg.withDomain && (
-                                <div className="text-xs text-cream/30 mb-2">
-                                  +domain:{" "}
-                                  <span className="text-gold/70">
-                                    {pkg.withDomain}
-                                  </span>
-                                </div>
-                              )}
                               {"forWho" in pkg && pkg.forWho && (
                                 <div className="text-xs text-gold/60 bg-gold/5 border border-gold/10 rounded-lg px-3 py-1.5 mt-2 mb-1">
                                   {pkg.forWho as string}
+                                </div>
+                              )}
+                              {"duration" in pkg && pkg.duration && (
+                                <div className="flex items-center gap-1.5 text-xs text-cream/40 mt-2">
+                                  <span>⏱</span>
+                                  <span>{pkg.duration as string}</span>
                                 </div>
                               )}
                               <ul className="space-y-2 mt-4">
